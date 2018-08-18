@@ -10,6 +10,13 @@
 		0AFDF069212751EE00280B5C /* Diffable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFDF05F212751EE00280B5C /* Diffable.framework */; };
 		0AFDF06E212751EE00280B5C /* DiffableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF06D212751EE00280B5C /* DiffableTests.swift */; };
 		0AFDF070212751EE00280B5C /* Diffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFDF062212751EE00280B5C /* Diffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFDF07C2127521300280B5C /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF07B2127521300280B5C /* Diffable.swift */; };
+		0AFDF07E2127529400280B5C /* SymbolTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF07D2127529400280B5C /* SymbolTable.swift */; };
+		0AFDF0802127579300280B5C /* Differ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF07F2127579300280B5C /* Differ.swift */; };
+		0AFDF0822127580600280B5C /* Differ+PassOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF0812127580600280B5C /* Differ+PassOne.swift */; };
+		0AFDF08421275BA700280B5C /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF08321275BA700280B5C /* Reference.swift */; };
+		0AFDF0862127707F00280B5C /* Differ+PassTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF0852127707F00280B5C /* Differ+PassTwo.swift */; };
+		0AFDF0882127757400280B5C /* Differ+PassThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF0872127757400280B5C /* Differ+PassThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		0AFDF068212751EE00280B5C /* DiffableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiffableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFDF06D212751EE00280B5C /* DiffableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableTests.swift; sourceTree = "<group>"; };
 		0AFDF06F212751EE00280B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFDF07B2127521300280B5C /* Diffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.swift; sourceTree = "<group>"; };
+		0AFDF07D2127529400280B5C /* SymbolTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolTable.swift; sourceTree = "<group>"; };
+		0AFDF07F2127579300280B5C /* Differ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Differ.swift; sourceTree = "<group>"; };
+		0AFDF0812127580600280B5C /* Differ+PassOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+PassOne.swift"; sourceTree = "<group>"; };
+		0AFDF08321275BA700280B5C /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		0AFDF0852127707F00280B5C /* Differ+PassTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+PassTwo.swift"; sourceTree = "<group>"; };
+		0AFDF0872127757400280B5C /* Differ+PassThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+PassThree.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,7 @@
 		0AFDF061212751EE00280B5C /* Diffable */ = {
 			isa = PBXGroup;
 			children = (
+				0AFDF079212751F800280B5C /* Source */,
 				0AFDF062212751EE00280B5C /* Diffable.h */,
 				0AFDF063212751EE00280B5C /* Info.plist */,
 			);
@@ -84,6 +99,28 @@
 				0AFDF06F212751EE00280B5C /* Info.plist */,
 			);
 			path = DiffableTests;
+			sourceTree = "<group>";
+		};
+		0AFDF079212751F800280B5C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDF07A2127520000280B5C /* Classes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0AFDF07A2127520000280B5C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDF07B2127521300280B5C /* Diffable.swift */,
+				0AFDF07D2127529400280B5C /* SymbolTable.swift */,
+				0AFDF07F2127579300280B5C /* Differ.swift */,
+				0AFDF08321275BA700280B5C /* Reference.swift */,
+				0AFDF0812127580600280B5C /* Differ+PassOne.swift */,
+				0AFDF0852127707F00280B5C /* Differ+PassTwo.swift */,
+				0AFDF0872127757400280B5C /* Differ+PassThree.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +185,7 @@
 				TargetAttributes = {
 					0AFDF05E212751EE00280B5C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					0AFDF067212751EE00280B5C = {
@@ -196,6 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFDF08421275BA700280B5C /* Reference.swift in Sources */,
+				0AFDF0882127757400280B5C /* Differ+PassThree.swift in Sources */,
+				0AFDF07E2127529400280B5C /* SymbolTable.swift in Sources */,
+				0AFDF0802127579300280B5C /* Differ.swift in Sources */,
+				0AFDF07C2127521300280B5C /* Diffable.swift in Sources */,
+				0AFDF0822127580600280B5C /* Differ+PassOne.swift in Sources */,
+				0AFDF0862127707F00280B5C /* Differ+PassTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +379,7 @@
 		0AFDF074212751EE00280B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uniq.Diffable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +401,7 @@
 		0AFDF075212751EE00280B5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +422,7 @@
 		0AFDF077212751EE00280B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DiffableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +436,7 @@
 		0AFDF078212751EE00280B5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DiffableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
