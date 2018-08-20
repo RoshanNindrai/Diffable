@@ -17,6 +17,9 @@
 		0AFDF08421275BA700280B5C /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF08321275BA700280B5C /* Reference.swift */; };
 		0AFDF0862127707F00280B5C /* Differ+PassTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF0852127707F00280B5C /* Differ+PassTwo.swift */; };
 		0AFDF0882127757400280B5C /* Differ+PassThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF0872127757400280B5C /* Differ+PassThree.swift */; };
+		AB7BD8BE21286E090096EF9E /* Differ+PassFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BD8BD21286E090096EF9E /* Differ+PassFour.swift */; };
+		AB7BD8C02128ADE60096EF9E /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BD8BF2128ADE60096EF9E /* Diff.swift */; };
+		AB7BD8C22128AEAE0096EF9E /* Differ+Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BD8C12128AEAE0096EF9E /* Differ+Process.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		0AFDF08321275BA700280B5C /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		0AFDF0852127707F00280B5C /* Differ+PassTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+PassTwo.swift"; sourceTree = "<group>"; };
 		0AFDF0872127757400280B5C /* Differ+PassThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+PassThree.swift"; sourceTree = "<group>"; };
+		AB7BD8BD21286E090096EF9E /* Differ+PassFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+PassFour.swift"; sourceTree = "<group>"; };
+		AB7BD8BF2128ADE60096EF9E /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
+		AB7BD8C12128AEAE0096EF9E /* Differ+Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Differ+Process.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,9 @@
 				0AFDF0812127580600280B5C /* Differ+PassOne.swift */,
 				0AFDF0852127707F00280B5C /* Differ+PassTwo.swift */,
 				0AFDF0872127757400280B5C /* Differ+PassThree.swift */,
+				AB7BD8BD21286E090096EF9E /* Differ+PassFour.swift */,
+				AB7BD8BF2128ADE60096EF9E /* Diff.swift */,
+				AB7BD8C12128AEAE0096EF9E /* Differ+Process.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -180,16 +189,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Roshan Balaji Nindrai Senthilnathan";
 				TargetAttributes = {
 					0AFDF05E212751EE00280B5C = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					0AFDF067212751EE00280B5C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -240,6 +250,9 @@
 				0AFDF0802127579300280B5C /* Differ.swift in Sources */,
 				0AFDF07C2127521300280B5C /* Diffable.swift in Sources */,
 				0AFDF0822127580600280B5C /* Differ+PassOne.swift in Sources */,
+				AB7BD8C02128ADE60096EF9E /* Diff.swift in Sources */,
+				AB7BD8C22128AEAE0096EF9E /* Differ+Process.swift in Sources */,
+				AB7BD8BE21286E090096EF9E /* Differ+PassFour.swift in Sources */,
 				0AFDF0862127707F00280B5C /* Differ+PassTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +290,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -284,6 +298,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -337,6 +352,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -344,6 +360,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -393,7 +410,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uniq.Diffable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -428,7 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uniq.DiffableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -442,7 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uniq.DiffableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

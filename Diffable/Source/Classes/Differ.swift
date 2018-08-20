@@ -26,5 +26,8 @@ extension Differ {
         passOne()
         passTwo()
         passThree()
+        listWalking(direction: .ascending)
+        listWalking(direction: .descending)
+        print(processDiff())
     }
 }
